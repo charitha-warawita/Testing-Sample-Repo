@@ -5,14 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstUnitTests
+namespace MyFirstUnitTests.Services
 {
     public class MapperServiceTest
     {
-        [Fact]
-        public void GetTransformedModelTitleTest() 
+        private readonly MapperService mapper;
+        public MapperServiceTest()
         {
-            MapperService mapper = new MapperService();
+            mapper = new MapperService();
+        }
+        [Fact]
+        public void GetTransformedModelTitleTest()
+        {
             var result = mapper.GetTransformedModel();
 
             Assert.Equal("Company Holiday Party HCL", result.Title);
@@ -21,7 +25,6 @@ namespace MyFirstUnitTests
         [Fact]
         public void GetTransformedModelNameTest()
         {
-            MapperService mapper = new MapperService();
             var result = mapper.GetTransformedModel();
 
             Assert.Contains("Event", result.Name);

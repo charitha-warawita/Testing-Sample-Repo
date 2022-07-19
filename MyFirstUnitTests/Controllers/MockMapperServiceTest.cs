@@ -11,18 +11,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstUnitTests
+namespace MyFirstUnitTests.Controllers
 {
-    public class MockMapperServiceTest 
+    public class MockMapperServiceTest
     {
         [Fact]
-        public void GetMockResponseValueTest() 
+        public void GetMockResponseValueTest()
         {
             //MapperService mapper = new MapperService();
             //var result = mapper.GetTransformedModel();
             //Assert.Equal("Company Holiday Party HCL", result.Title);
 
-            CalendarEventForm result = new CalendarEventForm {
+            CalendarEventForm result = new CalendarEventForm
+            {
                 EventDate = DateTime.Now,
                 EventHour = DateTime.Now.Hour,
                 EventMinute = DateTime.Now.Minute,
@@ -35,11 +36,11 @@ namespace MyFirstUnitTests
 
             var loggerMock = new Mock<ILogger<WeatherForecastController>>();
 
-            WeatherForecastController controller = new WeatherForecastController(loggerMock.Object ,mapperServiceMock.Object);
+            WeatherForecastController controller = new WeatherForecastController(loggerMock.Object, mapperServiceMock.Object);
             var finalResult = controller.GetMockResponse();
 
             var okResult = finalResult as OkObjectResult;
-            var resultObject = (CalendarEventForm)okResult.Value;  
+            var resultObject = (CalendarEventForm)okResult.Value;
 
             Assert.Equal(result, resultObject);
         }
