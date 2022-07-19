@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper.Core.API", "AutoMapper.Core.API\AutoMapper.Core.API.csproj", "{AA8C30BC-0B7F-4CE4-87A8-FF752089E2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstUnitTests", "MyFirstUnitTests\MyFirstUnitTests.csproj", "{0F8F02DA-AD14-4AC6-8A84-68C5987C3B4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA8C30BC-0B7F-4CE4-87A8-FF752089E2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8C30BC-0B7F-4CE4-87A8-FF752089E2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8C30BC-0B7F-4CE4-87A8-FF752089E2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8C30BC-0B7F-4CE4-87A8-FF752089E2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8F02DA-AD14-4AC6-8A84-68C5987C3B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8F02DA-AD14-4AC6-8A84-68C5987C3B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8F02DA-AD14-4AC6-8A84-68C5987C3B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8F02DA-AD14-4AC6-8A84-68C5987C3B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+﻿Src:
+https://github.com/Moq/moq4/wiki/Quickstart
+or
+https://softchris.github.io/pages/dotnet-moq.html#full-code
